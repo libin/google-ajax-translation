@@ -10,7 +10,7 @@ Author URI: http://libinpan.com
 
 Installation:
 	1. Download the plugin and unzip it (didn't you already do this?).
-	2. Put the 'ajaxtranslation.php' file into your wp-content/plugins/ directory.
+	2. Put the 'google-ajax-translation' folder into your wp-content/plugins/ directory.
 	3. Go to the Plugins page in your WordPress Administration area and click 'Activate' next to Google AJAX Translation.
 	4. Have fun with your blog readers.
 	5. Change the settings from Setting -> Google Translation Admin Page 

@@ -23,7 +23,7 @@ In the current version(0.2.*) I only enabled comment translation by default, but
 == Installation ==
 
 1. Download the plugin archive and expand it (you've likely already done this).
-2. Put the 'ajaxtranslation.php' file into your wp-content/plugins/ directory, or put the google-ajax-translation folder into your wp-content/plugins/ directory.
+2. Put the 'google-ajax-translation' folder into your wp-content/plugins/ directory.
 3. Go to the Plugins page in your WordPress Administration area and click 'Activate' for Google AJAX Translation.
 4. Have fun with your blog readers.
 5. Change the settings from Setting -> Google Translation Admin Page 
