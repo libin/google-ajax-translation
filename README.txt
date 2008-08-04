@@ -62,4 +62,4 @@ Initial Release
 
 == Screenshots ==
 
-1. "View this Comment in: " plus 14 languages/flags will show on the bottom of every your blog posts/comments
+1. "View this Comment in: " plus 24 languages/flags will show on the bottom of every your blog posts/comments
