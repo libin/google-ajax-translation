@@ -1,9 +1,9 @@
 === Google AJAX Translation ===
 Tags: google, ajax, translate, translation, language
-Contributors: Libin Pan
+Contributors: Libin Pan and Michael Klein
 Requires at least: 1.5
 Tested up to: 2.6
-Stable tag: 0.2.0
+Stable tag: 0.3.1
 
 This plugin enables Google AJAX Language API on your blog, so your blog readers can easily translate your blog posts or comments into other languages.
 
@@ -14,16 +14,18 @@ The Google AJAX Translation WordPress plugin provides a quick, simple and light 
 Be sure to start here:
 
 <a href="http://blog.libinpan.com/2008/08/04/google-ajax-translation-wordpress-plugin/">Google AJAX Translation WordPress Plugin V0.2.0</a>
+
 and
+
 <a href="http://blog.libinpan.com/2008/03/21/introducing-the-google-ajax-translation-wordpress-plugin/">Google AJAX Translation WordPress Plugin</a>
 
-In the current version(0.2.*) I only enabled comment translation by default, but you can enable post translation yourself from the admin page. And please keep this in mind: Google Ajax Translate only allow 500 characters right now (March 2008).
+In the current version(0.3.*) I only enabled comment translation by default, but you can enable post translation yourself from the admin page. And please keep this in mind: Google Ajax Translate only allow 500 characters right now (March 2008).
 
 
 == Installation ==
 
 1. Download the plugin archive and expand it (you've likely already done this).
-2. Put the 'google-ajax-translation' folder into your wp-content/plugins/ directory.
+2. Put the 'ajaxtranslation.php' file into your wp-content/plugins/ directory, or put the google-ajax-translation folder into your wp-content/plugins/ directory.
 3. Go to the Plugins page in your WordPress Administration area and click 'Activate' for Google AJAX Translation.
 4. Have fun with your blog readers.
 5. Change the settings from Setting -> Google Translation Admin Page 
@@ -34,6 +36,7 @@ In the current version(0.2.*) I only enabled comment translation by default, but
 Please see my blog online:
 
 http://blog.libinpan.com/2008/03/21/introducing-the-google-ajax-translation-wordpress-plugin/
+
 http://blog.libinpan.com/2008/08/04/google-ajax-translation-wordpress-plugin/
 
 
@@ -45,6 +48,13 @@ Have questions or suggestions for this? Perhaps it's already answered or being d
 
 
 == What's Changed? ==
+- .3.1
+. fixed some html-bugs (missing alt-Tags, etc.) (Michael Klein)
+
+- .3.0
+. encapsulate the plugin in a class. No global vars needed anymore, faster code (Michael Klein)
+. Better support of capabilities-model (WP 2.6)
+
 - .2.0
 Thanks Michael Klein from alquanto.de for:
 . Add Flag ICONs link style
