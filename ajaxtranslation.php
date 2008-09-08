@@ -26,6 +26,9 @@ TODO:
   - Support more than 500 characters?
 
 Version history:
+- .4.0
+. Add Enable/Disable Page Translation option
+
 - .3.1
 . fixed some html-bugs (missing alt-Tags, etc.) (Michael Klein)
 
@@ -95,6 +98,7 @@ if (!class_exists('GoogleTranslation')) {
     var $options = array(                               // default values for options
       'linkStyle'  => 'images',
       'postEnable' => false,
+      'pageEnable' => false,
       'languages'  => array()
     );
 
@@ -169,6 +173,12 @@ if (!class_exists('GoogleTranslation')) {
           <input name="'.$p.'postEnable" type="checkbox" '.(($this->options['postEnable']) ? 'checked="checked"':'') .' />
         </td>
       </tr>
+    <tr valign="top">
+      <th scope="row">'.__('Enable page translation', $this->textDomain).'</th>
+      <td>
+        <input name="'.$p.'pageEnable" type="checkbox" '.(($this->options['pageEnable']) ? 'checked="checked"':'') .' />
+      </td>
+    </tr>
       <tr valign="top">
         <th scope="row">'.__('Languages').'</th>
         <td>';
@@ -205,6 +215,8 @@ if (!class_exists('GoogleTranslation')) {
     }
 
     function processContent($content = '') {
+      if (is_page() && $this->options['pageEnable']) return $content;
+      
       global $post;
       if (!is_feed()) {                                 // ignore feeds
         //$this->loadLanguageFile();  // for future use
