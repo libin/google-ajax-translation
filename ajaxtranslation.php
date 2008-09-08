@@ -215,7 +215,7 @@ if (!class_exists('GoogleTranslation')) {
     }
 
     function processContent($content = '') {
-      if (is_page() && $this->options['pageEnable']) return $content;
+      if (is_page() && !$this->options['pageEnable']) return $content;
       
       global $post;
       if (!is_feed()) {                                 // ignore feeds
