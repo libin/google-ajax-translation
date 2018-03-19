@@ -92,7 +92,8 @@ if (!class_exists('GoogleTranslation')) {
       'ro'    => 'Romanian',
       'ru'    => 'Russian',
       'es'    => 'Spanish',
-      'sv'    => 'Swedish'
+      'sv'    => 'Swedish',
+      'tr'    => 'Turkish'
     );
 
     var $options = array(                               // default values for options
